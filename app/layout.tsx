@@ -2,10 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jesús | Automatizaciones y Páginas Web en Mazatlán",
+  title: "Jesús Rodríguez | Ingeniería en Sistemas Computacionales — Mazatlán",
   description:
-    "Freelancer en Mazatlán, México. Automatizo procesos con Python y creo páginas web modernas para negocios locales. Consulta gratis.",
-  keywords: ["freelancer mazatlán", "automatización python", "páginas web mazatlán", "digitalización negocios"],
+    "Portafolio de Jesús Antonio Rodríguez Peraza, estudiante de Ingeniería en Sistemas Computacionales en el TecNM Mazatlán. Desarrollo web, automatización con Python, bots, Arduino e impresión 3D.",
+  keywords: [
+    "Jesús Rodríguez",
+    "ingeniería en sistemas computacionales",
+    "TecNM Mazatlán",
+    "desarrollador python",
+    "automatización",
+    "arduino",
+    "freelancer mazatlán",
+  ],
 };
 
 export default function RootLayout({
