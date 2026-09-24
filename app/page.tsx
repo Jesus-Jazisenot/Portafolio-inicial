@@ -199,6 +199,30 @@ function About() {
 
 const projects = [
   {
+    title: "DocuCita — RAG con citas",
+    tag: "FastAPI · pgvector · Docker",
+    desc: "Responde preguntas sobre la Ley Federal del Trabajo (1,163 artículos) citando el artículo exacto, o dice que no lo encontró. Búsqueda híbrida y evaluación con 41 preguntas etiquetadas.",
+    repo: "docucita",
+    icon: "⚖️",
+    color: "from-teal-600/20 to-blue-900/20",
+  },
+  {
+    title: "Remote Jobs Pipeline",
+    tag: "dbt · DuckDB · GitHub Actions",
+    desc: "ELT diario: descarga vacantes remotas de 3 APIs, las modela con dbt (29 modelos y tests) y publica un tablero de salarios en GitHub Pages.",
+    repo: "remote-jobs-pipeline",
+    icon: "🛰️",
+    color: "from-orange-600/20 to-blue-900/20",
+  },
+  {
+    title: "Clasificador de intención",
+    tag: "scikit-learn · MLflow",
+    desc: "Detecta 60 intenciones en mensajes en español: 83.4% de exactitud en MASSIVE, 1.5 ms por predicción, experimentos registrados en MLflow.",
+    repo: "intent-classifier-es",
+    icon: "🧠",
+    color: "from-pink-600/20 to-blue-900/20",
+  },
+  {
     title: "Price Tracker",
     tag: "Python · FastAPI · SQLite",
     desc: "Rastreador de precios: scrapea tiendas, permite marcar productos desde una interfaz web y avisa por Telegram cuando baja el precio.",
@@ -322,8 +346,9 @@ const skills = [
   { group: "Lenguajes", items: ["Python", "TypeScript / JavaScript", "C++ (Arduino)", "C#", "Dart", "SQL"] },
   { group: "Web y backend", items: ["React", "Next.js", "FastAPI", "Flask", "Node.js", "Tailwind CSS"] },
   { group: "Datos y automatización", items: ["pandas", "Playwright", "BeautifulSoup", "PostgreSQL / Supabase", "SQLite", "Telegram / WhatsApp API"] },
+  { group: "IA y datos", items: ["Claude / agentes con tools", "RAG / pgvector", "Embeddings (Gemini)", "scikit-learn", "MLflow", "dbt / DuckDB"] },
   { group: "Hardware y fabricación", items: ["Arduino UNO R4 WiFi", "Sensores y actuadores", "Máquinas de estados", "Interrupciones (ISR)", "Impresión 3D (Creality K2 Plus)", "OrcaSlicer"] },
-  { group: "Herramientas", items: ["Git / GitHub", "Docker", "Vercel", "Linux", "VS Code", "Arduino IDE"] },
+  { group: "Herramientas", items: ["Git / GitHub", "Docker", "GitHub Actions (CI)", "pytest", "Vercel", "Linux"] },
 ];
 
 function Skills() {
