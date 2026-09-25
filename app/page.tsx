@@ -214,10 +214,18 @@ const projects = [
   {
     title: "DocuCita — RAG con citas",
     tag: "FastAPI · pgvector · Docker",
-    desc: "Responde preguntas sobre la Ley Federal del Trabajo (1,163 artículos) citando el artículo exacto, o dice que no lo encontró. Búsqueda híbrida y evaluación con 41 preguntas etiquetadas.",
+    desc: "Responde preguntas sobre la Ley Federal del Trabajo (1,163 artículos) citando el artículo exacto, o dice que no lo encontró. Búsqueda híbrida: 97% de fuentes correctas en una evaluación de 41 preguntas (74% solo con palabras clave).",
     repo: "docucita",
     icon: "⚖️",
     color: "from-teal-600/20 to-blue-900/20",
+  },
+  {
+    title: "Clasificador de mensajes con n8n",
+    tag: "n8n · Gemini · Docker",
+    desc: "Flujo de n8n que atiende mensajes de clientes: Gemini los clasifica con JSON estructurado (categoría, urgencia, respuesta) y un IF manda lo urgente a una persona y responde solo lo demás.",
+    repo: "n8n-clasificador-ia",
+    icon: "🔀",
+    color: "from-violet-600/20 to-blue-900/20",
   },
   {
     title: "Remote Jobs Pipeline",
@@ -358,7 +366,7 @@ function Projects() {
 const skills = [
   { group: "Lenguajes", items: ["Python", "TypeScript / JavaScript", "C++ (Arduino)", "C#", "Dart", "SQL"] },
   { group: "Web y backend", items: ["React", "Next.js", "FastAPI", "Flask", "Node.js", "Tailwind CSS"] },
-  { group: "Datos y automatización", items: ["pandas", "Playwright", "BeautifulSoup", "PostgreSQL / Supabase", "SQLite", "Telegram / WhatsApp API"] },
+  { group: "Datos y automatización", items: ["pandas", "Playwright", "BeautifulSoup", "PostgreSQL / Supabase", "SQLite", "Telegram / WhatsApp API", "n8n / Make"] },
   { group: "IA y datos", items: ["Claude / agentes con tools", "RAG / pgvector", "Embeddings (Gemini)", "scikit-learn", "MLflow", "dbt / DuckDB"] },
   { group: "Hardware y fabricación", items: ["Arduino UNO R4 WiFi", "Sensores y actuadores", "Máquinas de estados", "Interrupciones (ISR)", "Impresión 3D (Creality K2 Plus)", "OrcaSlicer"] },
   { group: "Herramientas", items: ["Git / GitHub", "Docker", "GitHub Actions (CI)", "pytest", "Vercel", "Linux"] },
